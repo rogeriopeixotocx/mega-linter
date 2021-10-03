@@ -697,9 +697,10 @@ class Linter:
             if cli_absolute is not None:
                 command[0] = cli_absolute
         logging.debug("Linter version command: " + str(command))
+        cwd = os.getcwd() if command[0] != 'npm' else '~/'
         try:
             process = subprocess.run(
-                command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT
+                command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, cwd=cwd
             )
             return_code = process.returncode
             output = utils.decode_utf8(process.stdout)
