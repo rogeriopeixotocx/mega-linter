@@ -13,7 +13,7 @@ Note: Can be used with `nvuillam/mega-linter@insiders` in your GitHub Action meg
   - Automerge internal job pascalgn/automerge-action-0.14.2 to pascalgn/automerge-action-0.14.3
 - Config reporter: Parse `.vscode/extensions.json` as json5 (with comments)
 - Add eslint-plugin-jsx-a11y dependency
-- Fix get linter version when linter is a npm plugin like an eslint plugin 
+- Fix get linter version when linter is a npm plugin like an eslint plugin
 
 - Linter versions upgrades
   - [cfn-lint](https://github.com/martysweet/cfn-lint) from 0.54.1 to **0.54.2** on 2021-09-23
